@@ -38,27 +38,4 @@ public class motsa {
         System.out.print(c);
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
