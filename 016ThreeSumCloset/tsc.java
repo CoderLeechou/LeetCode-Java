@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class tsc {
     //方法1
     /*public int threeSumCloset(int[] nums,int target){
-        int minDiff=Integer.MIN_VALUE;
+        int minDiff=Integer.MAX_VALUE;
         int result=0;
         int sum,diff;
         if(nums==null||nums.length<=2)
@@ -40,7 +40,7 @@ public class tsc {
         if(nums==null||nums.length<=2)
             return Integer.MAX_VALUE;
         Arrays.sort(nums);
-        int closet=nums[0]+nums[1]+nums[2];
+        int closet=nums[0]+nums[1]+nums[2]-target;
         for(int i=0;i<nums.length-2;i++){
             int cur=twoSum(nums,target-nums[i],i+1);
             if(Math.abs(cur)<Math.abs(closet))
